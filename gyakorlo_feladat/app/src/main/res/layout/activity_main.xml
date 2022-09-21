@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:gravity="center"
+	tools:context=".MainActivity">
+
+	<EditText
+		android:id="@+id/editTextBemenet"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:textAlignment="center"
+		android:hint="írj be valamit ide" />
+
+	<Button
+		android:id="@+id/buttonNagy"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/editTextBemenet"
+		android:text="NAGY BETŰS SZÖVEG"
+		android:layout_centerHorizontal="true"/>
+	<Button
+		android:id="@+id/buttonKis"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/buttonNagy"
+		android:text="KIS BETŰS SZÖVEG"
+		android:layout_centerHorizontal="true"/>
+	<Button
+		android:id="@+id/buttonSzin"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/buttonKis"
+		android:text="VÉLETLEN SZÍN GENERÁLÁS"
+		android:layout_centerHorizontal="true"/>
+	<TextView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/textViewKimenet"
+		android:layout_below="@+id/buttonSzin"
+		android:textAlignment="center"
+		android:textSize="30sp"/>
+
+</RelativeLayout>
